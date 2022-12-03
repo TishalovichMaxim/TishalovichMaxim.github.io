@@ -5,7 +5,7 @@ import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 function Navibar() {
     return (
         <>
-            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+            <Navbar collapseOnSelect expand="lg" bg="light" variant="light" fluid={true} className="p-0">
                 <Navbar.Brand href="#home">
                     <img
                         src="https://upload.wikimedia.org/wikipedia/commons/8/85/Flag_of_Belarus.svg"
