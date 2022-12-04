@@ -1,5 +1,7 @@
 import {Card, ListGroup, Container, Row, Col} from 'react-bootstrap';
-function KitchenSinkExample() {
+import { Telegram, Github } from 'react-bootstrap-icons';
+
+function OurTeam() {
   return (
 
     <Container>
@@ -16,12 +18,12 @@ function KitchenSinkExample() {
                     The most important developer of our team. Best chess player after cmak33. 
                     </Card.Text>
                 </Card.Body>
-                <ListGroup className="list-group-flush">
+                <ListGroup className="list-group-flush text-center">
                     <ListGroup.Item>
-                        <Card.Link href="#">GitHub</Card.Link>
+                        <Card.Link href="#"><Github/>GitHub</Card.Link>
                     </ListGroup.Item>
                     <ListGroup.Item>
-                        <Card.Link href="#">VK</Card.Link>
+                        <Card.Link href="#"><Telegram/>Telegram</Card.Link>
                     </ListGroup.Item>
                 </ListGroup>
                 </Card>
@@ -35,12 +37,12 @@ function KitchenSinkExample() {
                     Java cenior developer. Master of Sports in swimming.  
                     </Card.Text>
                 </Card.Body>
-                <ListGroup className="list-group-flush">
+                <ListGroup className="list-group-flush text-center">
                     <ListGroup.Item>
-                        <Card.Link href="#">GitHub</Card.Link>
+                        <Card.Link href="#"><Github/>GitHub</Card.Link>
                     </ListGroup.Item>
                     <ListGroup.Item>
-                        <Card.Link href="#">VK</Card.Link>
+                        <Card.Link href="#"><Telegram/>Telegram</Card.Link>
                     </ListGroup.Item>
                 </ListGroup>
                 </Card>
@@ -55,12 +57,12 @@ function KitchenSinkExample() {
                     Assembler developer. Basketball MVP.
                     </Card.Text>
                 </Card.Body>
-                <ListGroup className="list-group-flush">
+                <ListGroup className="list-group-flush text-center">
                     <ListGroup.Item>
-                        <Card.Link href="#">GitHub</Card.Link>
+                        <Card.Link href="#"><Github/>GitHub</Card.Link>
                     </ListGroup.Item>
-                    <ListGroup.Item>
-                        <Card.Link href="#">VK</Card.Link>
+                    <ListGroup.Item>                     
+                        <Card.Link href="#"><Telegram/>Telegram</Card.Link>
                     </ListGroup.Item>                    
                 </ListGroup>
                 </Card>
@@ -70,4 +72,4 @@ function KitchenSinkExample() {
   );
 }
 
-export default KitchenSinkExample;
+export default OurTeam;
