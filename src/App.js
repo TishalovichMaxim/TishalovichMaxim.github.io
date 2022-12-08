@@ -5,12 +5,14 @@ import { Button, Col, Container, Row, Breadcrumb, Image, Carousel, Stack} from '
 import Navibar from './Components/Navibar.js'
 import PortalDescription from './Components/PortalDescription';
 import OurTeam from './Components/OurTeam';
+import DailyWriter from './Components/DailyWriter';
 
 function App() {
   return (
     <>
       <Navibar/>    
       <PortalDescription/>
+      <DailyWriter/>
       <OurTeam/>
     </>
   );
