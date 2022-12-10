@@ -1,19 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Button, Col, Container, Row, Breadcrumb, Image, Carousel, Stack} from 'react-bootstrap';
 import Navibar from './Components/Navibar.js'
-import PortalDescription from './Components/PortalDescription';
-import OurTeam from './Components/OurTeam';
-import DailyWriter from './Components/DailyWriter';
+import MainPage from './Components/MainPage';
+import Writers from './Components/Writers';
 
 function App() {
+  let Component;
+
+  switch (window.location.pathname){
+    case "/":
+      Component = MainPage;
+      break;
+    case "/writers":
+      Component = Writers;
+      break;
+  }
+ 
   return (
-    <>
-      <Navibar/>    
-      <PortalDescription/>
-      <DailyWriter/>
-      <OurTeam/>
+    <> 
+      <Navibar/>
+      <Component/>
     </>
   );
 }
