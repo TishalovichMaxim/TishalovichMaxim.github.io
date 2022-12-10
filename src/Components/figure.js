@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Container, Row, Image, Button, Alert, Card} from 'react-bootstrap';
 
-function Figure() {
+function WriterIcon() {
     return (
         <>
 						<Container>
@@ -39,4 +39,4 @@ function Figure() {
     );
   }
   
-  export default Figure;
+  export default WriterIcon;
