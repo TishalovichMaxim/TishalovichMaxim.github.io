@@ -1,21 +1,26 @@
 import {Card, ListGroup, Container, Row, Col} from 'react-bootstrap';
 import { Telegram, Github } from 'react-bootstrap-icons';
 
+import { useTranslation } from 'react-i18next';
+
 function OurTeam() {
+
+  const { t, i18n } = useTranslation();
+
   return (
 
     <Container>
         <Row>
-            <h1 className='text-center'>Our team</h1>
+            <h1 className='text-center'>{t("our-team-title")}</h1>
         </Row>
         <Row className='justify-content-center align-items-center'>
             <Col className='d-flex justify-content-center align-items-center'>
                 <Card style={{ width: '18rem' }} >
                 <Card.Img variant="top" src="https://www.hdwallpapers.in/download/demon_slayer_black_and_white_kyojuro_rengoku_with_sword_hd_anime-1920x1080.jpg" />
                 <Card.Body>
-                    <Card.Title>Tishalovich Maxim</Card.Title>
+                    <Card.Title>{t("creator-1-name")}</Card.Title>
                     <Card.Text>
-                    The most important developer of our team. Best chess player after cmak33. 
+                    {t("creator-1-description")} 
                     </Card.Text>
                 </Card.Body>
                 <ListGroup className="list-group-flush text-center">
@@ -32,9 +37,9 @@ function OurTeam() {
                 <Card style={{ width: '18rem' }}>
                 <Card.Img width="" variant="top" src="https://wallpaperboat.com/wp-content/uploads/2020/10/10/56411/anime-black-and-white-02.jpg" />
                 <Card.Body>
-                    <Card.Title>Eremeychik Kirill</Card.Title>
+                    <Card.Title>{t("creator-2-name")}</Card.Title>
                     <Card.Text>
-                    Java cenior developer. Master of Sports in swimming.  
+                    {t("creator-2-description")}  
                     </Card.Text>
                 </Card.Body>
                 <ListGroup className="list-group-flush text-center">
@@ -52,9 +57,9 @@ function OurTeam() {
                 <Card style={{ width: '18rem' }}>
                 <Card.Img width="" variant="top" src="https://wallpapercave.com/wp/wp3110694.jpg" />
                 <Card.Body>
-                    <Card.Title>Gonzarevich Ilya</Card.Title>
+                    <Card.Title>{t("creator-3-name")}</Card.Title>
                     <Card.Text>
-                    Assembler developer. Basketball MVP.
+                    {t("creator-3-description")}
                     </Card.Text>
                 </Card.Body>
                 <ListGroup className="list-group-flush text-center">
