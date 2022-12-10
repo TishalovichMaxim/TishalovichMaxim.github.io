@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Container, Row, Image, Button, Alert, Card} from 'react-bootstrap';
 
-function WriterIcon() {
+function WriterIcon(props) {
     return (
         <>
 						<Container>
@@ -21,11 +21,14 @@ function WriterIcon() {
                             <Row>
                                 <Col className='d-flex flex-column justify-content-center align-items-center'>
                                     <Alert variant="success" className="alert-info">
-                                    <Alert.Heading className="text-right"><h1>Yanka Kupala</h1>
+                                            <Alert.Heading className="text-right"><h1>{props.name}</h1>
                                             </Alert.Heading>
-                                    <hr />
+                                            <hr />
+                                            <h2>
+                                                {props.description}
+                                            </h2>
                                     <h2>
-                                        Life years: 7.07.1882-28.06.1942 
+                                                {props.dates}
                                     </h2>
                                     </Alert>
                                 </Col>
