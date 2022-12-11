@@ -10,16 +10,32 @@
   "famouse-works-title": "Famouse works",
   "learn-more-button": "Learn more",
   "our-team-title": "Our team",
+  
   "creator-1-name": "Tishalovich Maxim",
   "creator-2-name": "Eremeichik Kirill",
   "creator-3-name": "Gonzarivich Ilya",
+  
   "creator-1-description": "Fullstack developer. Best chess player after cmak33.",
   "creator-2-description": "Java cenior developer. Master of Sports in swimming.",
   "creator-3-description": "Assembler developer. Basketball MVP.",
+  
   "kupala": "Yanka Kupala",
   "kupala-info": " Kupala was born on July 7, 1882, in Viazynka, a folwark settlement near Maladzyechna. His family had been well-known since the early 17th century, coming from the szlachta, although grown poor so both of his parents had to work as tenant farmers at the folwark.",
   "kupala-famouse-works": " \"Курган\", \"Раскиданное гнездо\", \"Могила льва\", \"Наследие\", \"Гусляр\"",
+  
   "kolas": "Yakub Kolas",
   "kolas-info": " Yakub Kolas, the classic writer of Belarusian and world literature, one of the founders of modern Belarusian literature and literary Belarusian language. A poet, playwright, prose writer, publicist, translator, teacher, public figure.",
-  "kolas-famouse-works": " \"Песни неволи\", \"Песни печали\", \"Новая земля\", \"Сымон-музыкант\", \"Трясина\""
+  "kolas-famouse-works": " \"Песни неволи\", \"Песни печали\", \"Новая земля\", \"Сымон-музыкант\", \"Трясина\"",
+  
+  "bykov": "Vasil Bykaŭ",
+  "bykov-info": " He was born on June 19, 1924 in the village of Bychki, Ushachsky district, Vitebsk region into a peasant family. Since childhood, he was fond of drawing. After finishing 8 grades at school in Kublichi, then studied at the sculpture department of the Vitebsk Art School (1939-1940), which he left because of the abolition of scholarships, and at an industrial school (until May 1941). In June 1941, an external pass in the exams for the 10th grade.",
+  "bykov-famouse-works": " \"Альпийская баллада\", \"Мёртвым не больно\", \"Сотников\", \"Обелиск\", \"Дожить до рассвета\"",
+
+  "shamiakin": "Ivan Shamiakin",
+  "shamiakin-info": " In 1936, he graduated from the Makovskaya school in seven grades and continued his studies at the Gomel Technical School of Construction Materials (1936-1940). After graduation, he worked as a technician at a brick factory in Bialystok. Even in the technical school he started to write poems and participated in the meetings of the literary association of the newspaper \"Gomelskaya Pravda\".",
+  "shamiakin-famouse-works": " \"Помста\", \"Тревожное счастье\", \"Сердце на ладони\", \"Снежные зимы\", \"Атланты и кариатиды\"",
+
+  "baradulin": "Ryhor Baradulin",
+  "baradulin-info": " He was the last Belarusian to be awarded the title of People's Poet (1992). Among other honors: the Ya. Я. He was awarded the Y. Kupala Prize (1976), the Order of Friendship of Peoples, the Order of the Badge of Honor, the Latvian Order of Three Stars (1997) and the F. Skaryna Medal. Grigory Borodulin is an honorary doctor of the Belarusian State University and an honorary citizen of Ushacha district.",
+  "baradulin-famouse-works": " \"Месяц над степью\", \"Руны Перуновы\", \"Сябрына\", \"Ксты\", \"Навошта\""
 }

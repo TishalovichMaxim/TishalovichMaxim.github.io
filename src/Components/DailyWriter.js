@@ -11,7 +11,7 @@ function DailyWriter() {
 
     let writer;
     let nWriter = Math.floor(Math.random() * 10);
-    nWriter %= 2;
+    nWriter %= 5;
     switch(nWriter){
         case 0:
             writer = writersInfos.kolas;
@@ -19,6 +19,15 @@ function DailyWriter() {
         case 1:
             writer = writersInfos.kupala;
             break;
+        case 2:
+            writer = writersInfos.bykov;
+            break;
+        case 3:
+            writer = writersInfos.shamiakin;
+            break;
+        case 4:
+            writer = writersInfos.baradulin;
+            break;       
     }
     return (
         <>
