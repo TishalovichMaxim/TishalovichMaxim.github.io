@@ -3,10 +3,23 @@ import React from "react";
 import { Row, Col, Container, Image, Button, Card, Alert} from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
 
+import writersInfos from './WriterComponents/WritersInfos.js'
+ 
 function DailyWriter() {
 
     const { t, i18n } = useTranslation();
 
+    let writer;
+    let nWriter = Math.floor(Math.random() * 10);
+    nWriter %= 2;
+    switch(nWriter){
+        case 0:
+            writer = writersInfos.kolas;
+            break;
+        case 1:
+            writer = writersInfos.kupala;
+            break;
+    }
     return (
         <>
             <Container>
@@ -18,23 +31,21 @@ function DailyWriter() {
                             <Row>
                                 <Col className='d-flex flex-column justify-content-center align-items-center'>
                                     <Alert variant="success">
-                                    <Alert.Heading>{t("daily-writer-title")}: Yanka Kupala<br/>
+                                    <Alert.Heading>{t("daily-writer-title")}: {t(writer.name)}<br/>
                                             </Alert.Heading>
                                     <hr />
                                     <p>
-                                        {t("life-years-title")}: 7.07.1882-28.06.1942 
+                                        {t("life-years-title")}: {writer.lifeDate}
                                     </p>
                                     <hr />
                                     <p className="mb-0">
-                                    {t("biography-title")}: 
-                                    Kupala was born on July 7, 1882, in Viazynka, a folwark settlement near Maladzyechna.
-                                    His family had been well-known since the early 17th century, coming from the szlachta,
-                                     although grown poor so both of his parents had to work as tenant farmers at the folwark.
+                                    {t("biography-title")}:  
+                                        {t(writer.info)}
                                     </p>
                                     <hr />
                                     <p className="mb-0">
                                     {t("famouse-works-title")}: 
-                                    "Курган", "Раскиданное гнездо", "Могила льва", "Наследие", "Гусляр" 
+                                        {t(writer.famouseWorks)} 
                                     </p>
                                     </Alert>
                                     <Button variant="success" size="lg">
@@ -45,7 +56,7 @@ function DailyWriter() {
                                     <Image
                                         rounded
                                         height={500}
-                                        src="https://upload.wikimedia.org/wikipedia/commons/0/05/Yanka_Kupala.jpg"
+                                        src={writer.image}
                                     />
                                 </Col>
                             </Row>
