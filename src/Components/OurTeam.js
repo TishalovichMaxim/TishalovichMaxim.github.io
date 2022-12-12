@@ -25,10 +25,10 @@ function OurTeam() {
                 </Card.Body>
                 <ListGroup className="list-group-flush text-center">
                     <ListGroup.Item>
-                        <Card.Link href="#"><Github/>GitHub</Card.Link>
+                        <Card.Link href="https://github.com/TishalovichMaxim"><Github/>GitHub</Card.Link>
                     </ListGroup.Item>
                     <ListGroup.Item>
-                        <Card.Link href="#"><Telegram/>Telegram</Card.Link>
+                        <Card.Link href="https://t.me/maximtishalovich"><Telegram/>Telegram</Card.Link>
                     </ListGroup.Item>
                 </ListGroup>
                 </Card>
@@ -44,10 +44,10 @@ function OurTeam() {
                 </Card.Body>
                 <ListGroup className="list-group-flush text-center">
                     <ListGroup.Item>
-                        <Card.Link href="#"><Github/>GitHub</Card.Link>
+                        <Card.Link href="https://github.com/cmak33"><Github/>GitHub</Card.Link>
                     </ListGroup.Item>
                     <ListGroup.Item>
-                        <Card.Link href="#"><Telegram/>Telegram</Card.Link>
+                        <Card.Link href="https://t.me/flunkedd"><Telegram/>Telegram</Card.Link>
                     </ListGroup.Item>
                 </ListGroup>
                 </Card>
@@ -64,10 +64,10 @@ function OurTeam() {
                 </Card.Body>
                 <ListGroup className="list-group-flush text-center">
                     <ListGroup.Item>
-                        <Card.Link href="#"><Github/>GitHub</Card.Link>
+                        <Card.Link href="https://github.com/IlyaSubtilnyj"><Github/>GitHub</Card.Link>
                     </ListGroup.Item>
                     <ListGroup.Item>                     
-                        <Card.Link href="#"><Telegram/>Telegram</Card.Link>
+                        <Card.Link href="https://t.me/iamthebestofthebestofthebest"><Telegram/>Telegram</Card.Link>
                     </ListGroup.Item>                    
                 </ListGroup>
                 </Card>
