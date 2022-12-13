@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navibar from './Components/Navibar.js'
 import MainPage from './Components/MainPage';
 import Writers from './Components/Writers';
+import SearchListPage from './Components/SearchListPage';
 
 function App() {
   let Component;
@@ -14,7 +15,7 @@ function App() {
       Component = MainPage;
       break;
     case "/writers":
-      Component = Writers;
+      Component = SearchListPage;
       break;
   }
 
