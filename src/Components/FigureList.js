@@ -1,5 +1,6 @@
 import React from "react";
 import './FigureList.css';
+import FigureListQuickInfo from "./FigureListQuickInfo";
 
 function FigureList() {
 		function change(val) {
@@ -10,22 +11,24 @@ function FigureList() {
 					let elasticItems = document.querySelectorAll('.elastic li');
 					if(val !== '') {
 							elasticItems.forEach(elem => {
-								let elemtext = elem.innerText.toLowerCase();
+								let elemH = elem.querySelector('h5');
+								let elemtext = elemH.innerText.toLowerCase();
 								if (elemtext.search(val) === -1) {
 									elem.classList.add('hide');
-									elem.innerHTML = elem.innerText;
+									elemH.innerHTML = elemH.innerText;
 								}
 								else {
 									elem.classList.remove('hide');
-									let str = elem.innerText;
-									elem.innerHTML = insertMark(str, elemtext.search(val), val.length);
+									let str = elemH.innerText;
+									elemH.innerHTML = insertMark(str, elemtext.search(val), val.length);
 								}
 							});
 					}
 					else {
 						elasticItems.forEach(elem => {
 							elem.classList.remove('hide');
-							elem.innerHTML = elem.innerText;
+							let elemH = elem.querySelector('h5');
+							elemH.innerHTML = elemH.innerText;
 						})
 					}	
 			}
@@ -37,13 +40,13 @@ function FigureList() {
 
     return (
         <>
-					<div class="container w-25 mt-5 border-top border-bottom border-info rounded">
+					<div class="container w-50 mt-5 border-top border-bottom border-info rounded">
 						<div class="row mt-3">
 							<form class="navbar-search">
 								<div class="container">
 									<div class="row">
 										<div class="col-sm">
-											<div class="form-group">
+											<div class="form-group mt-3 mb-3">
 												<input type="text" class="search-query" placeholder="Search" id="elastic" onChange={(event) => change(event.target.value)}/>
 											</div>
 										</div>
@@ -54,13 +57,27 @@ function FigureList() {
 						<div class="row mb-2">
 							<div class="mx-auto">
 								<ul class="list-group list-group-flush elastic">
-									<li class="list-group-item">Янка Купала</li>
-									<li class="list-group-item">Якуб Колас</li>
-									<li class="list-group-item">Василь Быков</li>
-									<li class="list-group-item">Иван Шамякин</li>
-									<li class="list-group-item">Рыгор Барадулин</li>
-									<li class="list-group-item">Иван Мележ</li>
-									<li class="list-group-item">Янка Брыль</li>
+									<li class="list-group-item">
+										<FigureListQuickInfo/>
+									</li>
+									<li class="list-group-item">
+										<FigureListQuickInfo/>
+									</li>
+									<li class="list-group-item">
+										<FigureListQuickInfo/>
+									</li>
+									<li class="list-group-item">
+										<FigureListQuickInfo/>
+									</li>
+									<li class="list-group-item">
+										<FigureListQuickInfo/>
+									</li>
+									<li class="list-group-item">
+										<FigureListQuickInfo/>
+									</li>
+									<li class="list-group-item">
+										<FigureListQuickInfo/>
+									</li>
 								</ul>
 							</div>
 						</div>
