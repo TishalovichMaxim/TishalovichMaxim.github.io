@@ -10,12 +10,12 @@ import timelinesInfo from './WriterComponents/TimelinesData';
 function Writers() {
     return (
         <>
-            <WriterIcon description={writersInfo[0].description} dates={writersInfo[0].dates} name={writersInfo[0].name} />
+            <WriterIcon description={writersInfo.kupala.description} dates={writersInfo.kupala.dates} name={writersInfo.kupala.name} />
             <FigureList />
-            <Timeline timeline={timelinesInfo[0].timeline} />
-            <Videos videoUrls={writersInfo[0].videos} />
-            <Gallery images={writersInfo[0].photo} />
-            <WriterMap coords={writersInfo[0].coords} />
+            <Timeline timeline={timelinesInfo.kupala} />
+            <Videos videoUrls={writersInfo.kupala.videos} />
+            <Gallery images={writersInfo.kupala.photo} />
+            <WriterMap coords={writersInfo.kupala.coords} />
       </>
     );
   }

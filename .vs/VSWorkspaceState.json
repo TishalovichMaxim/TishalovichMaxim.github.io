@@ -1,11 +1,13 @@
 {
   "ExpandedNodes": [
     "",
+    "\\public",
     "\\public\\locales",
     "\\src",
     "\\src\\Components",
-    "\\src\\Components\\writerComponents"
+    "\\src\\Components\\WriterComponents",
+    "\\src\\Images"
   ],
-  "SelectedNode": "\\src\\Components\\Writers.js",
+  "SelectedNode": "\\.gitignore",
   "PreviewInSolutionExplorer": false
 }
