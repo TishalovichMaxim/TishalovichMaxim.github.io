@@ -27,7 +27,7 @@ function Navibar() {
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
                     <Nav.Link href="/">{t("home-button")}</Nav.Link>
-                    <Nav.Link href="writers">{t("writers-button")}</Nav.Link>
+                    <Nav.Link href="/writers">{t("writers-button")}</Nav.Link>
                 </Nav>
                 </Navbar.Collapse>
                 <Nav>    

@@ -10,7 +10,7 @@ function FigureListQuickInfo(props) {
 						<div class="card-body">
 						<h5 class="card-title">{props.writer.name}</h5>
 					<p class="card-text">{props.writer.smallDescription}</p>
-					<Link to={"/writerPage/" + props.index}>real link</Link>
+					<Link to={"/writerPage/" + props.index}>полная информация</Link>
 						</div>
 					</div>
         </>

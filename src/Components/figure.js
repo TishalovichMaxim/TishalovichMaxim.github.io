@@ -11,7 +11,7 @@ function WriterIcon(props) {
 											<div class="h-25">
 											<Image
                       rounded              
-                      src="https://upload.wikimedia.org/wikipedia/commons/0/05/Yanka_Kupala.jpg"
+                                    src={props.photo}
 											class="img-fluid"
                       /> 	
 											</div>

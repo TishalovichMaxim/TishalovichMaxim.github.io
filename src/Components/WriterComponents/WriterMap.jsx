@@ -18,8 +18,8 @@ function WriterMap(props){
         >
                 <NavigationControl position="top-left" />
                 <Marker latitude={props.coords.latitude} longitude={props.coords.longitude} color='#61dbfb'>
-                    <img src={markerImg} widht="60"
-                        height="60"/>
+                    <img src={markerImg} widht="50"
+                        height="50"/>
                 </Marker>
             </Map>
             </div>

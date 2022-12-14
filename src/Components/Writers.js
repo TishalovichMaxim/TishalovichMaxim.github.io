@@ -11,11 +11,11 @@ function Writers() {
     const { id } = useParams();
     return (
         <>
-            <WriterIcon description={writersInfo[+id].description} dates={writersInfo[+id].dates} name={writersInfo[+id].name} />
+            <WriterIcon photo={writersInfo[+id].photo[0]} description={writersInfo[+id].description} dates={writersInfo[+id].dates} name={writersInfo[+id].name} />
             <Timeline timeline={writersInfo[+id].timeline} />
             <Videos videoUrls={writersInfo[+id].videos} />
             <Gallery images={writersInfo[+id].photo} />
-            <WriterMap coords={writersInfo[+id].coords} />
+            <WriterMap coords={writersInfo[+id].coords} place={writersInfo[+id].place}/>
       </>
     );
   }
