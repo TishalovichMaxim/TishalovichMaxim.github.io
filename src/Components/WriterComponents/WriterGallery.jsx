@@ -18,8 +18,6 @@ function Gallery(props) {
 													<img
 															className="d-block w-100"
 															src={img}
-															widht="710"
-															height = "400"
 															alt={i}
 													/>
 											</Carousel.Item>

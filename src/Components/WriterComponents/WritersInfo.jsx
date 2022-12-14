@@ -63,12 +63,12 @@ const writersInfo = [
         name: "Иван Петрович Шамякин",
         dates: "30 января 1921 — 14 октября 2004",
         shortDescription: "белорусский советский писатель, сценарист и драматург, общественный деятель",
-        description: "белорусский советский писатель, сценарист и драматург, общественный деятель.\n"+
+        description: "белорусский советский писатель, сценарист и драматург, общественный деятел"+
 "Герой Социалистического Труда(1981).Народный писатель Белорусской ССР(1972).Лауреат Сталинской премии третьей степени(1951).Член ВКП(б) с 1943 года.Академик Национальной академии наук Беларуси(1994)",
         videos: ["https://www.youtube.com/embed/I_l5gVo3zIg",
             "https://www.youtube.com/embed/ddMAfJFjzew",],
         photo: ["https://person.goub.by/wp-content/uploads/2018/09/%D0%A8%D0%B0%D0%BC%D1%8F%D0%BA%D0%B8%D0%BD-%D0%98-404x250.jpg",
-            "https://www.belta.by/images/storage/news/with_archive/2016/000027_55416_big.jpg"],
+            "https://www.kirovsk.by/wp-content/uploads/2021/01/%D0%A8%D0%B0%D0%BC%D1%8F%D0%BA%D0%B8%D0%BD.jpg"],
         coords: {
             longitude: 27.662736347945774,
             latitude: 53.938134137903994
