@@ -5,9 +5,13 @@ import { Container, Row, Col } from 'react-bootstrap';
 function Gallery(props) {
     return (
         <Container>
+						<div class="row">
+							<div class="col-md-8 mx-auto">
+							<label for="carousel" class="form-label display-5 text-danger">Галерея</label>
+							</div>
+						</div>
 					<Row>
-						<Col>
-							<label for="carousel" class="form-label">Галерея</label>
+						<Col>							
 							<Carousel id="carousel">
 							{props.images.map((img,i)=>
 											<Carousel.Item>
