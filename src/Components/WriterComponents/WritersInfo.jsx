@@ -1,6 +1,4 @@
-﻿import photo1 from "../../Images/rofl1.jpg";
-import photo2 from "../../Images/rofl2.jpg";
-import timelinesInfo from "./TimelinesData";
+﻿import timelinesInfo from "./TimelinesData";
 
 
 const writersInfo = [
