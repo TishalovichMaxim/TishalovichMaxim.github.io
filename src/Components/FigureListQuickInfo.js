@@ -1,16 +1,16 @@
 import React from "react";
-import writersInfos from "./WriterComponents/WritersInfos";
+import { Link } from "react-router-dom";
 
-function FigureListQuickInfo() {
-		let writer = writersInfos.kupala;
+
+function FigureListQuickInfo(props) {
     return (
         <>
-					<div class="card">
-						<img class="card-img-top" src={writer.image}/>
+			<div class="card">
+						<img class="card-img-top" src={props.writer.photo[0]}/>
 						<div class="card-body">
-							<h5 class="card-title">Янка Купала</h5>
-							<p class="card-text">Some quick information about writer.</p>
-							<a href="#" class="btn btn-primary">Go on writer page</a>
+						<h5 class="card-title">{props.writer.name}</h5>
+					<p class="card-text">{props.writer.smallDescription}</p>
+					<Link to={"/writerPage/" + props.index}>real link</Link>
 						</div>
 					</div>
         </>

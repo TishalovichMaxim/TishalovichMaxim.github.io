@@ -2,7 +2,7 @@ import React from "react";
 import './FigureList.css';
 import FigureListQuickInfo from "./FigureListQuickInfo";
 
-function FigureList() {
+function FigureList(props) {
 		function change(val) {
 			var check = document.querySelector('#elastic');
 			var canLink = check ? check.href : "";
@@ -56,28 +56,12 @@ function FigureList() {
 						</div>
 						<div class="row mb-2">
 							<div class="mx-auto">
-								<ul class="list-group list-group-flush elastic">
+						<ul class="list-group list-group-flush elastic">
+								{props.writers.map((wr,i) =>
 									<li class="list-group-item">
-										<FigureListQuickInfo/>
+										<FigureListQuickInfo writer={wr} index={i}/>
 									</li>
-									<li class="list-group-item">
-										<FigureListQuickInfo/>
-									</li>
-									<li class="list-group-item">
-										<FigureListQuickInfo/>
-									</li>
-									<li class="list-group-item">
-										<FigureListQuickInfo/>
-									</li>
-									<li class="list-group-item">
-										<FigureListQuickInfo/>
-									</li>
-									<li class="list-group-item">
-										<FigureListQuickInfo/>
-									</li>
-									<li class="list-group-item">
-										<FigureListQuickInfo/>
-									</li>
+								)}
 								</ul>
 							</div>
 						</div>

@@ -1,10 +1,13 @@
 import photo1 from "../../Images/rofl1.jpg";
 import photo2 from "../../Images/rofl2.jpg";
+import timelinesInfo from "./TimelinesData";
 
-const writersInfo = {
-    kupala:{
+
+const writersInfo = [
+       {
         name: "Matrovskii Lev",
         dates: "--",
+        shortDescription : "Na vecherok poidet",
         description: "Na vecherok poidet",
         videos: ["https://www.youtube.com/embed/WxHGD4d4zck",
             "https://www.youtube.com/embed/tPVnXl_IHiU",
@@ -13,11 +16,13 @@ const writersInfo = {
         coords: {
             longitude: 27.60454905668736,
             latitude: 53.917654126609094
-        }
+        },
+        timeline: timelinesInfo.kupala
     },
-    kolas: {
+    {
         name: "Matrovskii Lev",
         dates: "--",
+        shortDescription: "Na vecherok poidet",
         description: "Na vecherok poidet",
         videos: ["https://www.youtube.com/embed/WxHGD4d4zck",
             "https://www.youtube.com/embed/tPVnXl_IHiU",
@@ -26,11 +31,13 @@ const writersInfo = {
         coords: {
             longitude: 27.60454905668736,
             latitude: 53.917654126609094
-        }
+        },
+        timeline: timelinesInfo.kolas
     },
-    bykov: {
+    {
         name: "Matrovskii Lev",
         dates: "--",
+        shortDescription: "Na vecherok poidet",
         description: "Na vecherok poidet",
         videos: ["https://www.youtube.com/embed/WxHGD4d4zck",
             "https://www.youtube.com/embed/tPVnXl_IHiU",
@@ -39,11 +46,13 @@ const writersInfo = {
         coords: {
             longitude: 27.60454905668736,
             latitude: 53.917654126609094
-        }
+        },
+        timeline: timelinesInfo.bykov
     },
-    shamiakin: {
+    {
         name: "Matrovskii Lev",
         dates: "--",
+        shortDescription: "Na vecherok poidet",
         description: "Na vecherok poidet",
         videos: ["https://www.youtube.com/embed/WxHGD4d4zck",
             "https://www.youtube.com/embed/tPVnXl_IHiU",
@@ -52,11 +61,13 @@ const writersInfo = {
         coords: {
             longitude: 27.60454905668736,
             latitude: 53.917654126609094
-        }
+        },
+        timeline: timelinesInfo.shamiakin
     },
-    baradulin: {
+    {
         name: "Matrovskii Lev",
         dates: "--",
+        shortDescription: "Na vecherok poidet",
         description: "Na vecherok poidet",
         videos: ["https://www.youtube.com/embed/WxHGD4d4zck",
             "https://www.youtube.com/embed/tPVnXl_IHiU",
@@ -65,9 +76,10 @@ const writersInfo = {
         coords: {
             longitude: 27.60454905668736,
             latitude: 53.917654126609094
-        }
+        },
+        timeline: timelinesInfo.baradulin
     }
-};
+];
 
 export default writersInfo;
 
