@@ -1,12 +1,18 @@
 import React from 'react';
+import { Col, Row, Container } from 'react-bootstrap';
 
 const Videos = (props) => {
     return (
-        <div>
+        <div class="center-block">
             {props.videoUrls.map((url, i) =>
-                <div>
-                    <iframe src={url} title="Writer video" allowFullScreen></iframe>
-                    </div>)}
+                <Container>
+									<Row>
+										<Col>
+									  		<iframe src={url} title="Writer video" allowFullScreen></iframe>
+										</Col>
+									</Row>
+								</Container>
+						)}
         </div>
     );
 };
