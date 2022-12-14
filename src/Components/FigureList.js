@@ -41,20 +41,21 @@ function FigureList(props) {
     return (
         <>
 					<div class="container w-50 mt-5 mb-5 bg-warning border border-info rounded">
-						<div class="row mt-3">
+						<div class="row">
 							<form class="navbar-search">
 								<div class="container">
 									<div class="row">
 										<div class="col-sm">
 											<div class="form-group mt-3 mb-3">
-												<input type="text" class="search-query" placeholder="Search" id="elastic" onChange={(event) => change(event.target.value)}/>
+												<label for="mainList" class="form-label">Лист писателей</label>
+												<input type="text" class="search-query" placeholder="Поиск" id="elastic" onChange={(event) => change(event.target.value)}/>
 											</div>
 										</div>
 									</div>
 								</div>
 							</form>
 						</div>
-						<div class="row mb-2">
+						<div class="row mb-2" id="mainList">
 							<div class="mx-auto bg-secondary">
 								<ul class="list-group list-group-flush elastic mt-2">
 									{props.writers.map((wr,i) =>
