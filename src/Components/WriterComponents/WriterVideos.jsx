@@ -1,18 +1,13 @@
 import React from 'react';
-import { Col, Row, Container } from 'react-bootstrap';
+import Carousel from 'react-bootstrap/Carousel';
+import './videos.css';
 
 const Videos = (props) => {
     return (
-        <div class="center-block">
+        <div className="videos">
             {props.videoUrls.map((url, i) =>
-                <Container>
-									<Row>
-										<Col>
-									  		<iframe src={url} title="Writer video" allowFullScreen></iframe>
-										</Col>
-									</Row>
-								</Container>
-						)}
+                    <iframe className="video"  src={url} title="Writer video" allowFullScreen></iframe>
+                )}
         </div>
     );
 };
