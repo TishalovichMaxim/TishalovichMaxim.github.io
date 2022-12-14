@@ -6,7 +6,7 @@ function Gallery(props) {
     return (
         <Container>
 						<div class="row">
-							<div class="col-md-8 mx-auto">
+							<div class="col-md-1 mx-auto mt-5 mb-5">
 							<label for="carousel" class="form-label display-5 text-danger">Галерея</label>
 							</div>
 						</div>
