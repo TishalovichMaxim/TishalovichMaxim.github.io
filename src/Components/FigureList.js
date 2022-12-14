@@ -40,7 +40,7 @@ function FigureList(props) {
 
     return (
         <>
-					<div class="container w-50 mt-5 border-top border-bottom border-info rounded">
+					<div class="container w-50 mt-5 mb-5 bg-warning border border-info rounded">
 						<div class="row mt-3">
 							<form class="navbar-search">
 								<div class="container">
@@ -55,13 +55,13 @@ function FigureList(props) {
 							</form>
 						</div>
 						<div class="row mb-2">
-							<div class="mx-auto">
-						<ul class="list-group list-group-flush elastic">
-								{props.writers.map((wr,i) =>
-									<li class="list-group-item">
-										<FigureListQuickInfo writer={wr} index={i}/>
-									</li>
-								)}
+							<div class="mx-auto bg-secondary">
+								<ul class="list-group list-group-flush elastic mt-2">
+									{props.writers.map((wr,i) =>
+										<li class="list-group-item border rounded">
+											<FigureListQuickInfo writer={wr} index={i}/>
+										</li>
+									)}
 								</ul>
 							</div>
 						</div>
