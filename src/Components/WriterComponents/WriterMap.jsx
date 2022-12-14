@@ -7,15 +7,15 @@ import "./writerMap.css";
 
 function WriterMap(props){
     return (
-        <div>
+        <div >
             <div className="title">{props.place}</div>
-        <Map mapLib={maplibregl}
+        <Map  mapLib={maplibregl}
             initialViewState={{
                 longitude: props.coords.longitude,
                 latitude: props.coords.latitude,
                 zoom: 14
             }}
-            style={{ width: "100%", height: "100vh" }}
+            style={{ width: "80%", height: "90vh" }}
             mapStyle={process.env.REACT_APP_MAPS_REF}
         >
                 <NavigationControl position="top-left" />
