@@ -4,7 +4,7 @@ import maplibregl from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import markerImg from '../../Images/marker.png';
 import "./writerMap.css";
-import { Card, ListGroup, Container, Row, Col } from 'react-bootstrap';
+import { Container, Row } from 'react-bootstrap';
 
 function WriterMap(props){
     return (
