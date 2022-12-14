@@ -16,7 +16,7 @@ function OurTeam() {
         <Row className='justify-content-center align-items-center'>
             <Col className='d-flex justify-content-center align-items-center'>
                 <Card style={{ width: '18rem' }} >
-                <Card.Img variant="top" src="https://www.hdwallpapers.in/download/demon_slayer_black_and_white_kyojuro_rengoku_with_sword_hd_anime-1920x1080.jpg" />
+                <Card.Img variant="top" src="https://www.anime-desu.com/wp-content/uploads/2016/09/cowboy-bebop-15.jpg" />
                 <Card.Body>
                     <Card.Title>{t("creator-1-name")}</Card.Title>
                     <Card.Text>

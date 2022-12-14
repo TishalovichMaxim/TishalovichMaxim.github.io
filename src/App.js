@@ -14,20 +14,6 @@ import {
 } from "react-router-dom";
 
 function App() {
-  let Component;
-
-  switch (window.location.pathname){
-    case "/":
-      Component = MainPage;
-      break;
-    case "/writers":
-      Component = SearchListPage;
-          break;
-      case "/writerPage/0":
-          Component = Writers;
-          break;
-  }
-
   return (
       <>
           <div>
@@ -39,8 +25,7 @@ function App() {
                       <Route path="/writerPage/:id" element={<Writers />} />
                   </Routes>
               </BrowserRouter>
-
-              </div>
+          </div>
     </>
   );
 }

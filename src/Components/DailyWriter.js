@@ -2,6 +2,7 @@ import React from "react";
 
 import { Row, Col, Container, Image, Button, Card, Alert} from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
+import { Link } from "react-router-dom";
 
 import writersInfos from './WriterComponents/WritersInfos.js'
  
@@ -58,7 +59,9 @@ function DailyWriter() {
                                     </p>
                                     </Alert>
                                     <Button variant="success" size="lg">
-                                        {t("learn-more-button")}
+                                        <Link to={"/writerPage/" + writer.index} style={{ color: 'inherit', textDecoration: 'inherit'}}>
+                                            {t("learn-more-button")}
+                                        </Link>
                                     </Button>
                                 </Col>
                                 <Col>
