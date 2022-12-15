@@ -46,14 +46,14 @@ function FigureList(props) {
 
     return (
         <>
-					<div class="container w-50 mt-5 mb-2 bg-primary border border-info rounded">
+					<div class="container w-50 mt-5 mb-2 bg-dark border border-info rounded">
 						<div class="row">
 							<form class="navbar-search">
 								<div class="container">
 									<div class="row">
 										<div class="col-sm">
 											<div class="form-group mt-3 mb-3">
-												<label for="mainList" class="form-label">{t("label-writers-list")}</label>
+													<label for="mainList" class="form-label text-info">{t("label-writers-list")}</label>
 												<input type="text" class="search-query" placeholder={t("search-field")} id="elastic" onChange={(event) => change(event.target.value)}/>
 											</div>
 										</div>
@@ -68,7 +68,7 @@ function FigureList(props) {
 										<Container>
 											<Row>
 												<Col>
-													<li class="list-group-item border rounded bg-danger">
+													<li class="list-group-item border rounded bg-light mb-3">
 														<FigureListQuickInfo writer={wr} index={i}/>
 													</li>
 												</Col>
