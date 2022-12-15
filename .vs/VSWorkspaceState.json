@@ -1,12 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\public",
-    "\\public\\locales",
     "\\src",
-    "\\src\\Components",
-    "\\src\\Components\\WriterComponents",
-    "\\src\\Images"
+    "\\src\\Components"
   ],
+  "SelectedNode": "\\src\\Components\\Navibar.js",
   "PreviewInSolutionExplorer": false
 }

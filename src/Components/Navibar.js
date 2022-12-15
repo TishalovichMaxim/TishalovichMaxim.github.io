@@ -1,7 +1,10 @@
 import React from "react";
 
 import { Navbar, Nav, NavDropdown, Image } from 'react-bootstrap';
+import { Link } from "react-router-dom";
+
 import { useTranslation } from 'react-i18next';
+import './navibar.css';
 
 function Navibar() {
 
@@ -26,8 +29,8 @@ function Navibar() {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
-                    <Nav.Link href="/">{t("home-button")}</Nav.Link>
-                    <Nav.Link href="/writers">{t("writers-button")}</Nav.Link>
+                        <Link to="/" className="leftLink" style={{ textDecoration: 'none' }}>{t("home-button")}</Link>
+                        <Link to="/writers" style={{ textDecoration: 'none' }}>{t("writers-button")}</Link>
                 </Nav>
                 </Navbar.Collapse>
                 <Nav>    

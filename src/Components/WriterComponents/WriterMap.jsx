@@ -20,7 +20,7 @@ function WriterMap(props){
                     zoom: 14
                 }}
                 style={{ width: "80%", height: "90vh" }}
-                mapStyle={process.env.REACT_APP_MAPS_REF}
+                    mapStyle="https://api.maptiler.com/maps/topo-v2/style.json?key=5esAXK9TAIIVf5jS9oSW"
             >
                     <NavigationControl position="top-left" />
                     <Marker latitude={props.coords.latitude} longitude={props.coords.longitude} color='#61dbfb'>
