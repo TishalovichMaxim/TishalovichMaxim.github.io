@@ -1,8 +1,14 @@
 import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
 import './FigureList.css';
 import FigureListQuickInfo from "./FigureListQuickInfo";
 
+import { useTranslation } from 'react-i18next';
+
 function FigureList(props) {
+
+  	const { t, i18n } = useTranslation();
+
 		function change(val) {
 			var check = document.querySelector('#elastic');
 			var canLink = check ? check.href : "";
@@ -40,28 +46,34 @@ function FigureList(props) {
 
     return (
         <>
-					<div class="container w-50 mt-5 mb-5 bg-warning border border-info rounded">
+					<div class="container w-50 mt-5 mb-2 bg-primary border border-info rounded">
 						<div class="row">
 							<form class="navbar-search">
 								<div class="container">
 									<div class="row">
 										<div class="col-sm">
 											<div class="form-group mt-3 mb-3">
-												<label for="mainList" class="form-label">Лист писателей</label>
-												<input type="text" class="search-query" placeholder="Поиск" id="elastic" onChange={(event) => change(event.target.value)}/>
+												<label for="mainList" class="form-label">{t("label-writers-list")}</label>
+												<input type="text" class="search-query" placeholder={t("search-field")} id="elastic" onChange={(event) => change(event.target.value)}/>
 											</div>
 										</div>
 									</div>
 								</div>
 							</form>
 						</div>
-						<div class="row mb-2" id="mainList">
-							<div class="mx-auto bg-secondary">
-								<ul class="list-group list-group-flush elastic mt-2">
+						<div class="row" id="mainList">
+							<div class="mx-auto">
+								<ul class="list-group list-group-flush elastic">
 									{props.writers.map((wr,i) =>
-										<li class="list-group-item border rounded">
-											<FigureListQuickInfo writer={wr} index={i}/>
-										</li>
+										<Container>
+											<Row>
+												<Col>
+													<li class="list-group-item border rounded bg-danger">
+														<FigureListQuickInfo writer={wr} index={i}/>
+													</li>
+												</Col>
+											</Row>
+										</Container>
 									)}
 								</ul>
 							</div>

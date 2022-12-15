@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function FigureListQuickInfo(props) {
     return (
         <>
-			<div class="card bg-light">
+			<div class="card bg-light mt-4 mb-3">
 						<img class="card-img-top" src={props.writer.photo[0]}/>
 						<div class="card-body">
 						<h5 class="card-title">{props.writer.name}</h5>
