@@ -4,13 +4,13 @@ import maplibregl from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import markerImg from '../../Images/marker.png';
 import "./writerMap.css";
-import { Container, Row } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 
 function WriterMap(props){
     return (
         <Container>
-            <Row>
-                <div className="title">{props.place}</div>
+            <Row className="text-center align-items-center justify-content-center my-4">
+                <Col className='bg-dark rounded-pill mx-2 py-3 text-light' sm={10}><h2>{props.place}</h2></Col>
             </Row>
             <Row className='justify-content-center align-items-center border-dark'>
             <Map  mapLib={maplibregl}
