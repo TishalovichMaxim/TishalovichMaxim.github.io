@@ -12,7 +12,7 @@ function WriterMap(props){
             <Row>
                 <div className="title">{props.place}</div>
             </Row>
-            <Row className='justify-content-center align-items-center'>
+            <Row className='justify-content-center align-items-center border-dark'>
             <Map  mapLib={maplibregl}
                 initialViewState={{
                     longitude: props.coords.longitude,
