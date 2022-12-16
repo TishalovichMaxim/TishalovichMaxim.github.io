@@ -6,6 +6,8 @@ import { Link } from "react-router-dom";
 
 import writersInfos from './WriterComponents/WritersInfos.js'
  
+import "../App.css"
+
 function DailyWriter() {
 
     const { t, i18n } = useTranslation();
@@ -35,7 +37,7 @@ function DailyWriter() {
             <Container>
                 <Row>
                     <Col>
-                    <Card className="text-center mt-5 mb-5">
+                    <Card className="text-center mt-5 mb-5 half-transp-card">
                     <Card.Body>
                         <Container>
                             <Row>

@@ -5,6 +5,7 @@ import writersInfo from './WriterComponents/WritersInfo';
 import WriterMap from './WriterComponents/WriterMap';
 import FigureList from './FigureList';
 import Timeline from './WriterComponents/WriterTimeline';
+import { Image } from 'react-bootstrap';
 import { useParams } from "react-router-dom";
 import { useTranslation } from 'react-i18next';
 
@@ -18,7 +19,7 @@ function Writers() {
             <Videos videoUrls={writersInfo[+id].videos} />
             <Gallery images={writersInfo[+id].photo} />
             <WriterMap coords={writersInfo[+id].coords} place={writersInfo[+id].place}/>
-      </>
+        </>
     );
   }
   

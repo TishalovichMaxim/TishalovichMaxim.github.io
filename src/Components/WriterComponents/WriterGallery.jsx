@@ -9,7 +9,7 @@ function Gallery(props) {
 		<>
 			<Container className='py-5 my-3 rounded'>
 				<Row className="align-items-center justify-content-center">
-					<Card style={{ width: '80rem' }} className="pb-5">
+					<Card style={{ width: '80rem' }} className="pb-5 special-card border border-0">
 						<Container className>
 							<Row className="text-center align-items-center justify-content-center my-4">
 								<Col className='bg-dark rounded-pill mx-2 py-3 text-light' sm={10}><h2>Галерея</h2></Col>

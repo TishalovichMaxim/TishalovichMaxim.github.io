@@ -1,12 +1,13 @@
 import React from "react";
 import { Col, Container, Row, Image, Button, Alert, Card} from 'react-bootstrap';
+import "./WriterComponents/writerMap.css";
 
 function WriterIcon(props) {
     return (
         <>
             <Container className="mt-3">
                 <Col>
-                    <Card className="text-center pt-4">
+                    <Card className="text-center pt-4 bg-dark special-card border border-0">
                         <Row>
                             <div class="h-25">
                                 <Image
@@ -20,7 +21,7 @@ function WriterIcon(props) {
                             <Container>
                                 <Row>
                                     <Col className='d-flex flex-column justify-content-center align-items-center rounded'>
-                                        <Alert variant="success" className="alert-info bg-light text-dark  border border-dark border-2" style={{ width: "64rem"}}>
+                                        <Alert variant="success" className="alert-info text-dark  border border-dark border-2 special-card" style={{ width: "64rem"}}>
                                             <Alert.Heading><h2>{props.name}</h2>
                                             </Alert.Heading>
                                                 <Container>

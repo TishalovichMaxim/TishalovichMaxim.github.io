@@ -11,3 +11,7 @@
     height: 80%;
     height: 100vh;
 }
+
+.special-card {
+    background-color: rgba(245, 245, 245, 0.4) !important;
+}

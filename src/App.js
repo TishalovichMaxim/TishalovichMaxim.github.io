@@ -17,14 +17,18 @@ function App() {
   return (
       <>
           <div>
-              <BrowserRouter>
-                  <Navibar />
-                  <Routes>
-                      <Route path="/" element={<MainPage />} />
-                      <Route path="/writers" element={<SearchListPage />} />
-                      <Route path="/writerPage/:id" element={<Writers />} />
-                  </Routes>
-              </BrowserRouter>
+                <div style={{ 
+                    backgroundImage: `url("https://www.patternpictures.com/wp-content/uploads/Kristal-subtle-glass-white-background-pattern-patternpictures-0220.png")` }}>
+                
+                    <BrowserRouter>
+                        <Navibar />
+                        <Routes>
+                            <Route path="/" element={<MainPage />} />
+                            <Route path="/writers" element={<SearchListPage />} />
+                            <Route path="/writerPage/:id" element={<Writers />} />
+                        </Routes>
+                    </BrowserRouter>
+                </div>
           </div>
     </>
   );
