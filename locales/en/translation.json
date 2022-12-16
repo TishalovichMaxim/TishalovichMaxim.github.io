@@ -10,23 +10,26 @@
   "famouse-works-title": "Famouse works",
   "learn-more-button": "Learn more",
   "our-team-title": "Our team",
-  
+  "label-writers-list": "List of writers",
+  "search-field": "Search of writer...",
+
+
   "creator-1-name": "Tishalovich Maxim",
   "creator-2-name": "Eremeichik Kirill",
   "creator-3-name": "Gonzarivich Ilya",
-  
+
   "creator-1-description": "Fullstack developer. Best chess player after cmak33.",
   "creator-2-description": "Java cenior developer. Master of Sports in swimming.",
   "creator-3-description": "Assembler developer. Basketball MVP.",
-  
+
   "kupala": "Yanka Kupala",
   "kupala-info": " Kupala was born on July 7, 1882, in Viazynka, a folwark settlement near Maladzyechna. His family had been well-known since the early 17th century, coming from the szlachta, although grown poor so both of his parents had to work as tenant farmers at the folwark.",
   "kupala-famouse-works": " \"Курган\", \"Раскиданное гнездо\", \"Могила льва\", \"Наследие\", \"Гусляр\"",
-  
+
   "kolas": "Yakub Kolas",
   "kolas-info": " Yakub Kolas, the classic writer of Belarusian and world literature, one of the founders of modern Belarusian literature and literary Belarusian language. A poet, playwright, prose writer, publicist, translator, teacher, public figure.",
   "kolas-famouse-works": " \"Песни неволи\", \"Песни печали\", \"Новая земля\", \"Сымон-музыкант\", \"Трясина\"",
-  
+
   "bykov": "Vasil Bykaŭ",
   "bykov-info": " He was born on June 19, 1924 in the village of Bychki, Ushachsky district, Vitebsk region into a peasant family. Since childhood, he was fond of drawing. After finishing 8 grades at school in Kublichi, then studied at the sculpture department of the Vitebsk Art School (1939-1940), which he left because of the abolition of scholarships, and at an industrial school (until May 1941). In June 1941, an external pass in the exams for the 10th grade.",
   "bykov-famouse-works": " \"Альпийская баллада\", \"Мёртвым не больно\", \"Сотников\", \"Обелиск\", \"Дожить до рассвета\"",
